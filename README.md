@@ -22,7 +22,7 @@ Code for this repository will be uploaded upon paper acceptance
     <th class="tg-9wq8" colspan="3" rowspan="2">Input</th>
     <th class="tg-9wq8" rowspan="3">Layer<br>Weights</th>
     <th class="tg-9wq8" colspan="4">F1-score (AIS)</th>
-    <th class="tg-9wq8" colspan="2" rowspan="2"><F1-score (AIS+WIS)</th>
+    <th class="tg-9wq8" colspan="2" rowspan="2">F1-score (AIS+WIS)</th>
   </tr>
   <tr>
     <td class="tg-9wq8" colspan="2">LVO</td>
