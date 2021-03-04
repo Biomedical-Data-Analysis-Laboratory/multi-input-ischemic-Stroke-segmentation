@@ -1,4 +1,4 @@
-# Image segmentation of ischemic stroke regions (dead and salvable tissues)
+# Segmentation of damaged brain in acute ischemic stroke patients using early fusion multi-input CNN
 
 ## Release v1.0
 It contains the code described in the paper "Segmentation of damaged brain in acute ischemic stroke patients using early fusion multi-input CNN"
