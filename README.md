@@ -169,9 +169,7 @@ Code for this repository will be uploaded upon paper acceptance
 </table>
 
 ### 2.2 - Link to paper
-```
-TBA
-```
+https://arxiv.org/abs/2203.10039
 
 
 ### 3 - Dependecies:
