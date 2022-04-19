@@ -1,0 +1,102 @@
+{
+  "EXPERIMENT": 100.887,
+  "USE_SEQUENCE_TRAIN": 1,
+  "root_path": "...",
+  "dataset_path": "...",
+  "PATIENTS_TO_TRAINVAL": ["ALL"],
+  "PATIENTS_TO_TEST": [""..."],
+  "OVERRIDE_MODELS_ID_PATH": "",
+  "init": {
+    "TF_CPP_MIN_LOG_LEVEL": "3",
+    "per_process_gpu_memory_fraction": 1,
+    "allow_growth": 1,
+    "MULTIPROCESSING": 1
+  },
+  "relative_paths": {
+    "labeled_images": "...",
+    "patients": "...",
+    "save": {
+      "model": "MODELS/",
+      "partial_model": "TMP_MODELS/",
+      "plot": "PLOTS/",
+      "images": "IMAGES/",
+      "text": "TEXT/",
+      "intermediate_activation": "intermediate_activation/"
+    }
+  },
+  "models": [
+     {
+      "name": "PMs_segmentation_NOBatch",
+      "loss": "focal_tversky_loss",
+      "metrics": ["squared_dice_coef","tversky_coef","sdc_rest","sdc_p","sdc_c","rec_p","rec_c",
+        "prec_p","prec_c","f1_p","f1_c","tversky_p","tversky_c"],
+      "epochs": 1000,
+      "batch_size": 2,
+      "steps_per_epoch_ratio": 1,
+      "validation_steps_ratio": 1,
+      "val":{
+        "validation_perc": 20,
+        "number_patients_for_validation": 30,
+        "number_patients_for_testing": 0,
+        "random_validation_selection": 0
+      },
+      "test_steps":1,
+      "optimizer": {
+        "name": "Adam",
+        "lr": 0.00001,
+        "beta_1": 0.9,
+        "beta_2":0.999,
+        "epsilon":"None",
+        "decay":0.0
+      },
+      "params":{
+        "trainable": 0,
+        "gradual_finetuning_solution": {
+          "type": "full"
+        },
+        "dropout":{
+          "cbf.1":0.25,
+          "cbv.1":0.25,
+          "ttp.1":0.25,
+          "tmax.1":0.25,
+          "mip.1": 0.25
+        }
+      },
+      "callbacks":{
+        "ModelCheckpoint": {
+          "monitor": "val_loss",
+          "mode": "min",
+          "period": 1
+        },
+        "EarlyStopping": {
+          "monitor": "val_loss",
+          "min_delta": 0.00001,
+          "patience": 25
+        },
+        "CollectBatchStats": {
+          "acc":"squared_dice_coef"
+        },
+        "CSVLogger": {
+          "filename": "logger.csv",
+          "separator": ","
+        },
+        "TensorBoard": {
+          "update_freq":"batch",
+          "histogram_freq": 5
+        }
+      },
+      "moreinfo": {
+        "mip": 0,
+        "nihss": 1
+      },
+      "to_categ": 1,
+      "save_images": 1,
+      "data_augmentation": 1,
+      "cross_validation": 0,
+      "train_again": 0,
+      "supervised": 1,
+      "save_activation_filter": 0,
+      "use_hickle": 0
+    }
+  ]
+}

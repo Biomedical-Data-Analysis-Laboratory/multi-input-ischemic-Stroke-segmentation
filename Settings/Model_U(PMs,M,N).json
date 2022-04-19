@@ -1,0 +1,103 @@
+{
+  "EXPERIMENT": 89.3,
+  "USE_SEQUENCE_TRAIN": 1,
+  "root_path": "/home/stud/lucat/PhD_Project/Stroke_segmentation/",
+  "dataset_path": "/local/home/lucat/DATASET/SUS2020_TIFF_HU/",
+  "PATIENTS_TO_TRAINVAL": ["ALL"],
+  "PATIENTS_TO_TEST": ["01_001","01_007","01_013","01_019","01_025","01_031",
+    "01_037","01_044","01_049","01_053","01_061","01_067","01_074",
+    "02_001","02_007","02_013","02_019","02_025","02_031","02_036",
+    "02_043","02_050","02_055","02_062","03_003","03_010","03_014",
+    "01_057","01_059","01_066","01_068","01_071","01_073"],
+  "OVERRIDE_MODELS_ID_PATH": "",
+  "init": {
+    "TF_CPP_MIN_LOG_LEVEL": "3",
+    "per_process_gpu_memory_fraction": 1,
+    "allow_growth": 1,
+    "MULTIPROCESSING": 1
+  },
+  "relative_paths": {
+    "labeled_images": "/home/prosjekt/PerfusionCT/StrokeSUS/GT_TIFF/",
+    "patients": "/home/prosjekt/PerfusionCT/StrokeSUS/Parametric_Maps/",
+    "save": {
+      "model": "MODELS/",
+      "partial_model": "TMP_MODELS/",
+      "plot": "PLOTS/",
+      "images": "IMAGES/",
+      "text": "TEXT/",
+      "intermediate_activation": "intermediate_activation/"
+    }
+  },
+  "models": [
+     {
+      "name": "PMs_segmentation_MoreInfo_NOBatch",
+      "loss": "focal_tversky_loss",
+      "metrics": ["squared_dice_coef","tversky_coef","sdc_rest","sdc_p","sdc_c","rec_p","rec_c",
+        "prec_p","prec_c","f1_p","f1_c","tversky_p","tversky_c"],
+      "epochs": 1000,
+      "batch_size": 2,
+      "steps_per_epoch_ratio": 1,
+      "validation_steps_ratio": 1,
+      "val":{
+        "validation_perc": 20,
+        "number_patients_for_validation": 30,
+        "number_patients_for_testing": 0,
+        "random_validation_selection": 0
+      },
+      "test_steps":1,
+      "optimizer": {
+        "name": "Adam",
+        "lr": 0.00001,
+        "beta_1": 0.9,
+        "beta_2":0.999,
+        "epsilon":"None",
+        "decay":0.0
+      },
+      "params":{
+        "trainable": 1,
+        "dropout":{
+          "cbf.1":0.25,
+          "cbv.1":0.25,
+          "ttp.1":0.25,
+          "tmax.1":0.25,
+          "mip.1":0.25
+        }
+      },
+      "callbacks":{
+        "ModelCheckpoint": {
+          "monitor": "val_loss",
+          "mode": "min",
+          "period": 1
+        },
+        "EarlyStopping": {
+          "monitor": "val_loss",
+          "min_delta": 0.00001,
+          "patience": 25
+        },
+        "CollectBatchStats": {
+          "acc":"squared_dice_coef"
+        },
+        "CSVLogger": {
+          "filename": "logger.csv",
+          "separator": ","
+        },
+        "TensorBoard": {
+          "update_freq":"batch",
+          "histogram_freq": 5
+        }
+      },
+      "moreinfo": {
+        "mip": 1,
+        "nihss": 1
+      },
+      "to_categ": 1,
+      "save_images": 1,
+      "data_augmentation": 1,
+      "cross_validation": 0,
+      "train_again": 0,
+      "supervised": 1,
+      "save_activation_filter": 0,
+      "use_hickle": 0
+    }
+  ]
+}
