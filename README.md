@@ -43,7 +43,7 @@ Code for this repository will be uploaded upon paper acceptance
 </thead>
 <tbody>
   <tr>
-    <td class="tg-9wq8"><a href="Setting/Model_F(PMs).json">Model_F(PMs)</a></td>
+    <td class="tg-9wq8"><a href="Settings/Model_F(PMs).json">Model_F(PMs)</a></td>
     <td class="tg-9wq8">X</td>
     <td class="tg-9wq8"></td>
     <td class="tg-9wq8"></td>
@@ -54,7 +54,7 @@ Code for this repository will be uploaded upon paper acceptance
     <td class="tg-9wq8">0.22&plusmn;0.3</td>
   </tr>
   <tr>
-    <td class="tg-9wq8"><a href="Setting/Model_F(PMs,M).json">Model_F(PMs,M)</a></td>
+    <td class="tg-9wq8"><a href="Settings/Model_F(PMs,M).json">Model_F(PMs,M)</a></td>
     <td class="tg-9wq8">X</td>
     <td class="tg-9wq8">X</td>
     <td class="tg-9wq8"></td>
@@ -64,7 +64,7 @@ Code for this repository will be uploaded upon paper acceptance
     <td class="tg-9wq8">0.20&plusmn;0.3</td>
   </tr>
   <tr>
-    <td class="tg-9wq8"><a href="Setting/Model_F(PMs,N).json">Model_F(PMs,N)</a></td>
+    <td class="tg-9wq8"><a href="Settings/Model_F(PMs,N).json">Model_F(PMs,N)</a></td>
     <td class="tg-9wq8">X</td>
     <td class="tg-9wq8"></td>
     <td class="tg-9wq8">X</td>
@@ -74,7 +74,7 @@ Code for this repository will be uploaded upon paper acceptance
     <td class="tg-9wq8">0.16&plusmn;0.2</td>
   </tr>
   <tr>
-    <td class="tg-9wq8"><a href="Setting/Model_F(PMs,M,N).json">Model_F(PMs,M,N)</a></td>
+    <td class="tg-9wq8"><a href="Settings/Model_F(PMs,M,N).json">Model_F(PMs,M,N)</a></td>
     <td class="tg-9wq8">X</td>
     <td class="tg-9wq8">X</td>
     <td class="tg-9wq8">X</td>
@@ -84,7 +84,7 @@ Code for this repository will be uploaded upon paper acceptance
     <td class="tg-9wq8">0.18&plusmn;0.3</td>
   </tr>
   <tr>
-    <td class="tg-9wq8"><a href="Setting/Model_U(PMs).json">Model_U(PMU)</a></td>
+    <td class="tg-9wq8"><a href="Settings/Model_U(PMs).json">Model_U(PMU)</a></td>
     <td class="tg-9wq8">X</td>
     <td class="tg-9wq8"></td>
     <td class="tg-9wq8"></td>
@@ -95,7 +95,7 @@ Code for this repository will be uploaded upon paper acceptance
     <td class="tg-9wq8">0.24&plusmn;0.3</td>
   </tr>
   <tr>
-    <td class="tg-9wq8"><a href="Setting/Model_F(PMs,M).json">Model_F(PMs,M)</a></td>
+    <td class="tg-9wq8"><a href="Settings/Model_F(PMs,M).json">Model_F(PMs,M)</a></td>
     <td class="tg-9wq8">X</td>
     <td class="tg-9wq8">X</td>
     <td class="tg-9wq8"></td>
@@ -105,7 +105,7 @@ Code for this repository will be uploaded upon paper acceptance
     <td class="tg-9wq8"><b>0.24&plusmn;0.3</b></td>
   </tr>
   <tr>
-    <td class="tg-9wq8"><a href="Setting/Model_U(PMs,N).json">Model_U(PMs,N)</a></td>
+    <td class="tg-9wq8"><a href="Settings/Model_U(PMs,N).json">Model_U(PMs,N)</a></td>
     <td class="tg-9wq8">X</td>
     <td class="tg-9wq8"></td>
     <td class="tg-9wq8">X</td>
@@ -115,7 +115,7 @@ Code for this repository will be uploaded upon paper acceptance
     <td class="tg-9wq8">0.23&plusmn;0.3</td>    
   </tr>
   <tr>
-    <td class="tg-9wq8"><a href="Setting/Model_U(PMs,M,N).json">Model_U(PMs,M,N)</a></td>
+    <td class="tg-9wq8"><a href="Settings/Model_U(PMs,M,N).json">Model_U(PMs,M,N)</a></td>
     <td class="tg-9wq8">X</td>
     <td class="tg-9wq8">X</td>
     <td class="tg-9wq8">X</td>
@@ -125,7 +125,7 @@ Code for this repository will be uploaded upon paper acceptance
     <td class="tg-c3ow">0.22&plusmn;0.3</td>
   </tr>
   <tr>
-    <td class="tg-9wq8"><a href="Setting/Model_G(PMs).json">Model_G(PMs)</a></td>
+    <td class="tg-9wq8"><a href="Settings/Model_G(PMs).json">Model_G(PMs)</a></td>
     <td class="tg-9wq8">X</td>
     <td class="tg-9wq8"></td>
     <td class="tg-9wq8"></td>
@@ -136,7 +136,7 @@ Code for this repository will be uploaded upon paper acceptance
     <td class="tg-9wq8">0.19&plusmn;0.3</td>
   </tr>
   <tr>
-    <td class="tg-9wq8"><a href="Setting/Model_G(PMs,M).json">Model_G(PMs,M)</a></td>
+    <td class="tg-9wq8"><a href="Settings/Model_G(PMs,M).json">Model_G(PMs,M)</a></td>
     <td class="tg-9wq8">X</td>
     <td class="tg-9wq8">X</td>
     <td class="tg-9wq8"></td>
@@ -146,7 +146,7 @@ Code for this repository will be uploaded upon paper acceptance
     <td class="tg-9wq8">0.22&plusmn;0.4</td>
   </tr>
   <tr>
-    <td class="tg-9wq8"><a href="Setting/Model_G(PMs,N).json">Model_G(PMs,N)</a></td>
+    <td class="tg-9wq8"><a href="Settings/Model_G(PMs,N).json">Model_G(PMs,N)</a></td>
     <td class="tg-9wq8">X</td>
     <td class="tg-9wq8"></td>
     <td class="tg-9wq8">X</td>
@@ -156,7 +156,7 @@ Code for this repository will be uploaded upon paper acceptance
     <td class="tg-9wq8">0.21&plusmn;0.3</td>
   </tr>
   <tr>
-    <td class="tg-9wq8"><a href="Setting/Model_G(PMs,M,N).json">Model_G(PMs,M,N)</a></td>
+    <td class="tg-9wq8"><a href="Settings/Model_G(PMs,M,N).json">Model_G(PMs,M,N)</a></td>
     <td class="tg-9wq8">X</td>
     <td class="tg-9wq8">X</td>
     <td class="tg-9wq8">X</td>
@@ -180,7 +180,7 @@ pip install -r requirements.txt
 ### 4 - Usage
 Assuming that you already have a dataset to work with, you can use a json file to define the setting of your model.
 
-Refer to  [Setting_explained.json](Setting/Setting_explained.json) for explanations of the various settings.
+Refer to  [Setting_explained.json](Settings/Setting_explained.json) for explanations of the various settings.
 
 
 ### 4.1 Train/Test
