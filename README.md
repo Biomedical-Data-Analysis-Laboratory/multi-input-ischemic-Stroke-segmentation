@@ -215,7 +215,13 @@ Usage: python main.py gpu sname
 ### 5 - How to cite our work
 The code is released free of charge as open-source software under the GPL-3.0 License. Please cite our paper when you have used it in your study.
 ```
-TBA
+@inproceedings{tomasetti2022multi,
+  title={Multi-input segmentation of damaged brain in acute ischemic stroke patients using slow fusion with skip connection},
+  author={Tomasetti, Luca and Khanmohammadi, Mahdieh and Engan, Kjersti and H{\o}llesli, Liv Jorunn and Kurz, Kathinka D{\ae}hli},
+  booktitle={Proceedings of the Northern Lights Deep Learning Workshop},
+  volume={3},
+  year={2022}
+}
 ```
 
 ### Got Questions?
