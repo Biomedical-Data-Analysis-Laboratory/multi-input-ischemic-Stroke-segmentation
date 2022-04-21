@@ -169,6 +169,8 @@ Code for this repository will be uploaded upon paper acceptance
 </table>
 
 ### 2.2 - Link to paper
+https://doi.org/10.7557/18.6223
+
 https://arxiv.org/abs/2203.10039
 
 
