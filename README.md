@@ -15,7 +15,6 @@ A Dice coefficient of 0.81 for penumbra and 0.52 for core over the large vessel 
 ![alt text](images/intro-pipeline.png?raw=true)
 
 ### 2 - Code
-Code for this repository will be uploaded upon paper acceptance
 
 ### 2.1 - Table Validation Results 
 
